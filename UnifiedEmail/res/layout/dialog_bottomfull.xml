@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff">
+
+        <ListView
+            android:id="@+id/mListView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/dialog_center_soft"
+            android:listSelector="@color/dialog_blue"
+            android:divider="#CCCCCC"
+            android:dividerHeight="1px"
+            android:layout_below="@+id/title" />
+
+        <TextView
+            android:id="@+id/dialog_center_soft"
+            style="@style/dialog_bottom_style"
+            android:text="@string/bottom_select"
+            android:layout_alignParentBottom="true"/>
+        <ImageView
+            android:id="@+id/dialog_imagesettings"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:focusable="false"
+            android:scaleType="fitEnd"
+            android:layout_marginLeft="230dp"
+            android:layout_alignParentBottom="true"
+            android:adjustViewBounds="true"
+            android:src="@drawable/option"/>
+
+    </RelativeLayout>
+</FrameLayout>
